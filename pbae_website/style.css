@@ -1,0 +1,352 @@
+*{
+  font-family: Helvetica;
+  margin: 0;
+}
+
+body {
+  background-color: rgb(208,209,183);
+}
+
+@font-face {
+  font-family: Kanit; /** downloaded google font for blog page**/
+  src: url(Kanit-Light.ttf);
+  font-weight: normal;
+}   
+
+p {
+  font-family: verdana;
+  font-size: 20px;
+}
+/** All of the home page **/
+
+.nav{ /** The whole nav bar**/
+  z-index: 5;
+  width: 100%;
+  background-color: #555;
+  overflow: auto;
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+
+}
+.nav a{ /** the links for the navigation bar **/
+  float: right;
+  padding:10px;
+  width: 19%;
+  color: white;
+  font-weight: 75;
+}
+
+.nav a:hover{
+  background-color: #000;/** black block that appears when you hover over the nav bar**/
+}
+
+.nav a.home{ /**For the home link to be on the left**/
+  float: left;
+  font-weight: bolder;
+  color:  rgb(210, 171, 153);
+}
+
+.box { /** Home Page: pink box style and positioning**/
+  position: absolute;
+  z-index: -1;
+  height: 660px;
+  width: 1000px;
+  left: 440px;
+  top: 100px;
+  background-color: rgb(210, 171, 153);
+
+}
+
+#me{ /**picture of myself**/
+position: absolute;
+z-index: 0;
+left:500px;
+margin-top: 10px;
+}
+
+#fname, #lname { /** Home Page: Priscilla Bae text style  **/
+    font-weight: 500;
+    text-align: left;
+    font-size: 40pt;
+    font-weight: bold;
+    position:relative;
+    top: 150px;
+    margin-left: 65px;
+    color: #555;
+
+}
+
+
+
+
+#AboutMe { /** Home Page: About Me title style and positioning**/
+  z-index: 2;
+  position: relative;
+  font-size: 20pt;
+  font-weight: 400;
+  margin-left: 1125px;
+  top: 50px;
+ 
+}
+
+
+#content { /** Home Page: About Me description**/
+  z-index: 1;
+  position: relative;
+  font-size: 13pt;
+  font-weight: 100;
+  margin-left: 940px;
+  margin-top: 100px;
+}
+/** Row of hobbies **/
+.hobbies {
+  margin-top: 250px;
+  text-align: center;
+  text-decoration: underline overline;
+  font-style: italic;
+}
+
+img.draw{ /**drawing hobby picture positioning**/
+  left:0px;
+  position: relative;
+
+}
+img.hike{ /**hiking hobby picture positioning**/
+  left:60px;
+  position: relative;
+
+}
+
+img.dog{ /** dog hobby picture positioning**/
+  left:120px;
+  position: relative;
+
+}
+
+img.goose{ /** photography hobby picture positioning**/
+  left:180px;
+  position: relative;
+
+}
+
+.contact{ /** contact me link under my name**/
+  font-weight: 100;
+  text-decoration: underline;
+  margin-left: 250px
+}
+
+.contact a{ /**coloring the link black**/
+  color: black;
+}
+.contact a:hover{ /** creating the contact me link hover color blue**/
+  color: blue;
+}
+
+
+
+.footer, .footer1{ /** footer for home and project experiences because it is a longer page so positioning is different**/
+  padding: 10px;
+  background-color: #555;
+  text-decoration: none;
+  color:white;
+  position: relative;
+  left: 0;
+  
+}
+
+.footer2{ /**footer for my blog page**/
+  padding: 10px;
+  background-color: #555;
+  text-decoration: none;
+  color:white;
+  position: relative;
+  left: 0;
+  margin-top: 300px;
+}
+
+.footer3{ /** footer for contact use page**/
+  padding: 10px;
+  background-color: #555;
+  text-decoration: none;
+  color:white;
+  position: relative;
+  left: 0;
+  margin-top: 105px;
+  
+}
+
+.footer a, .footer1 a, .footer2 a, .footer3 a { /** creating the footer's font color white**/
+  color:white;
+}
+.footer a:hover, .footer1 a:hover, .footer2 a:hover, .footer3 a:hover{
+  color: blue; /** hover color for email is blue**/
+}
+
+
+/** Start of projects and experiences page **/
+
+table, td, th { /** styling the table **/
+  border: 1px solid;
+  border-collapse: collapse;
+  margin-left: auto;
+  margin-right: auto;
+  
+}
+#overview{
+  padding-top: 25px; /** bringing the title down with padding so it is not covered by the nav bar**/
+  text-align: center;
+}
+
+#Canon, #RTC, #Research, #Coinbase, #Protein{
+  color: rgb(18, 105,76);  /** coloring the text of the experiences and projects**/
+}
+
+.top{
+  background-color:rgb(165,186,164); /** coloring the first row of the table **/
+}
+
+.etable a{
+  color: black; 
+}
+
+.etable a:hover{
+  color: darkolivegreen; /** hover color over the experience and project links**/
+}
+
+#row1{
+  background-color: lightgray; /** making the lower rows of the table a different color **/
+}
+
+a{
+  text-decoration: none; /** removing text decorations from all links **/ 
+}
+
+
+
+#projects-experiences{
+  text-align: left;
+}
+
+#title{
+  font-style: italic;
+}
+
+#title a{
+  color: black;
+}
+
+#title a:hover{
+  color: darkolivegreen; /** hover color over the research link**/
+}
+
+
+#mainn{
+  color: black;
+  border-style: double;
+  text-align: center;
+}
+
+/** Start of Blog page**/
+#blog{
+font-family: Kanit;
+text-align: center;
+}
+/** styling and adding padding to the titles and form labels**/
+ #blog_title{  
+  padding-top: 40px;
+  color: rgb(18, 105, 76);
+  text-align: center;
+}
+
+legend{
+  font-size: 15pt;
+  font-weight: bold; 
+  color: rgb(210, 171, 153);
+}
+
+label{
+  color: rgb(210, 171, 153);
+  font-size: 12pt;
+}
+
+form{
+
+  background-color: #555;
+}
+
+
+
+/** Start of Contact Page **/
+#map{
+ /**mostly focused on positioning the titles and maps here**/
+  margin-top: 50px;
+  position: absolute;
+}
+
+
+#map iframe{
+  margin-left: 670px;
+}
+
+#header{
+  padding-top: 50px;
+  font-size: 15pt;
+  border-style:dotted;
+  text-align: center;
+}
+
+#header h1{
+  color: rgb(18, 105, 76);
+}
+
+ul{
+list-style-position: inside;
+text-align: center;
+
+}
+
+#cmu{
+  font-size: 20pt;
+  margin-left: 100px;
+  margin-top: 70px;
+  position: absolute;
+  color: rgb(18, 105, 76);
+  text-decoration: underline;
+}
+
+.cmucontact{
+  margin-left: 100px;
+  position: relative;
+  top: 100px;
+}
+
+#summary{  /** source of this summary is the link connected to the #cmu id  (Carnegie Mellon University title)**/
+font-weight: 100;
+margin-left: 50px;
+margin-top:250px;
+}
+
+#cmu a:visited{
+color: rgb(18, 105, 76);
+}
+#cmu a:hover {
+  color: black;
+}
+
+.cmucontact, .personal{
+font-weight: 100;
+font-size: 15pt;
+}
+
+.cmucontact a, .personal a {
+  text-decoration: none;
+  color: black;
+}
+.cmucontact a:hover, .personal a:hover{
+  color: rgb(18, 105, 76);
+  text-decoration: underline;
+
+}
+
